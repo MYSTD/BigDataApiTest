@@ -42,6 +42,8 @@ public class JedisDemo {
 
         jedis.close();
     }
+
+    // 测试列表
     public static void testList(){
         Jedis jedis = getJedisFromPool();
         jedis.lpush("k1","v1");
