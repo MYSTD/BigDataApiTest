@@ -1,0 +1,25 @@
+package com.std.dga.dolphinscheduler.service;
+
+import com.baomidou.dynamic.datasource.annotation.DS;
+import com.std.dga.dolphinscheduler.bean.TDsTaskInstance;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
+
+/**
+ * <p>
+ *  服务类
+ * </p>
+ *
+ * @author std
+ * @since 2023-10-13
+ */
+@DS("dolphinscheduler")
+public interface TDsTaskInstanceService extends IService<TDsTaskInstance> {
+
+    List<TDsTaskInstance> selectList(String assessDate);
+
+    List<TDsTaskInstance> selectFailedTask(String taskName, String assessDate);
+
+    List<TDsTaskInstance> selectBeforeNDaysInstance(String taskName, String startDate, String assessDate);
+}

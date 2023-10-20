@@ -1,0 +1,33 @@
+<script>
+
+
+    var emp = {};
+    emp.name = "lisi";
+    emp.age = 40;
+    // JS语言可以给对象动态添加属性
+    //  对象的类可以不需要声明,可以采用特殊的方式构建对象
+    //  1. 采用大括号：对象
+    //  2. 采用中括号:集合（数组）
+    // 如果使用 大括号作为对象，那么对象中的属性可以采用双引号声明属性名,属性值和属性名之间采用冒号分隔
+    // 如果属性值为字符串类型，也要使用双引号,如果不是字符串类型，可以不使用双引号。
+    // 多个属性采用逗号分隔开
+    // 符合上面要求的对象声明，就是JSON对象
+    // JavaScript语言主要目的是控制当前浏览器中网页内容，其中之一的核心功能是网页内容和服务器的数据交互
+    // 交互的数据格式是什么：csv,tsv,
+    //    为什么不能传递Object
+
+    // JSON字符串：符合JSON格式的字符串
+    // JSON文件：符合JSON格式的文件
+    emp.sex = "xxx"
+
+    //alert(emp.name + "," + emp.age + "," + emp.sex);
+
+    //var objs = [{}, {}, {}]
+
+    //alert(objs)
+    var user = { "name": "zhangsan", "age":30 }
+    var jsonString = "{ \"name\": \"zhangsan\", \"age\":30 }"
+
+    alert(user.name + ',' + user.age)
+
+</script>
